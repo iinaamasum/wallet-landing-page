@@ -1,10 +1,11 @@
 import React from 'react';
 import { BsMenuButtonWideFill } from 'react-icons/bs';
 import { GiCrossedBones } from 'react-icons/gi';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const navigate = useNavigate();
   const navLinks = [
     { id: 1, path: '/home', name: 'Home' },
     { id: 2, path: '/shop', name: 'Shop' },
@@ -57,6 +58,7 @@ export default function Navbar() {
               </ul>
               <div className="flex items-center w-full lg:w-auto">
                 <button
+                  onClick={() => navigate('/login')}
                   className="text-pink-500 border border-pink-500 hover:bg-pink-500 hover:text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 w-1/2 lg:w-auto"
                   type="button"
                 >
