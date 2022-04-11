@@ -5,8 +5,8 @@ import { FcGoogle } from 'react-icons/fc';
 const Login = () => {
   return (
     <>
-      <section className="my-10">
-        <div className="w-2/5 mx-auto px-16 border-gray-700 shadow rounded-lg bg-gray-800 py-20">
+      <section className="my-5 sm:my-10">
+        <div className="w-11/12 sm:w-4/5 md:w-4/6 lg:w-2/5 mx-auto px-5 xl:px-10 border-gray-700 shadow rounded-lg bg-gray-800 py-5 sm:py-20">
           <div className="pt-3 pb-10">
             <h3 className="tracking-wide text-center text-md text-gray-300 py-4">
               Sign In with
